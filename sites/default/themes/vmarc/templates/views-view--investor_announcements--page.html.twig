@@ -1,0 +1,25 @@
+{%
+  set classes = [
+    'view',
+    'view-' ~ id|clean_class,
+    'view-id-' ~ id,
+    'view-display-id-' ~ display_id,
+    dom_id ? 'js-view-dom-id-' ~ dom_id,
+	'custom-class'
+  ]
+%}
+{% if header %}
+    <header>
+      {{ header }}
+    </header>
+  {% endif %}
+<div class="announcements-body">
+  <div class="container">
+  <div class="page-menu"> 
+    {{ drupal_region('page_menu') }}
+  </div>
+  <div class="announcement-list-container">
+	{{ rows }}
+  </div>
+  </div>
+</div>

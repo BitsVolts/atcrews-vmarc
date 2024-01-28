@@ -1,0 +1,96 @@
+footer.main {
+    background-color: #1d1d1d;
+    .footer-navbar {
+        padding: 1rem 0;
+        color: rgba(255, 255, 255, 0.8);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        .d-flex {
+            align-items: stretch;
+            justify-content: space-between;
+        }
+        .footer-logo-container {
+            height: inherit;
+            display: flex;
+            align-items: center;
+            .logo {
+                position: relative;
+                width: 120px;
+                min-height: 30px;
+                img {
+                    filter: brightness(0) invert(1);
+                    width: 100%;
+                }
+            }
+        }
+        .footer-nav {
+            display: flex;
+            .menu{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                .nav-link,.menu-item a {
+                    padding: 0.4rem 0.8rem;
+                    font-size: 0.8rem;
+                    display: flex;
+                    align-items: center;
+                    color: rgba(255, 255, 255, 0.8);
+                    text-decoration: none;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+    .footer-details {
+        padding: 30px 0;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.8rem;
+        .footer-cols {
+            width: 100%;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            .col-main,
+            .col-sub {
+                .title {
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                    font-size: 1.1em;
+                }
+                .social-links{
+                    font-size: 1.2rem;
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    a{
+                        display: inline-block;
+                        padding: 0.4rem;
+                        text-decoration: none;
+                        color: rgba(255,255,255,0.8);
+                        svg{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .col-main {
+                flex: 1 0 50%;
+                padding-right: 10%;
+            }
+            .col-sub {
+                flex: 1 0 15%;
+            }
+            @include xs{
+                flex-direction: column;
+                .col-main{
+                    padding: 0;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}

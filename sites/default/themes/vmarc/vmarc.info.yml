@@ -1,0 +1,37 @@
+name: Vmarc
+type: theme
+base theme: classy
+description: 'A Customized theme for V-Marc'
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - core/normalize
+  - vmarc/global-styling
+
+ckeditor_stylesheets:
+  - css/base/elements.css
+  - css/components/captions.css
+  - css/components/table.css
+  - css/components/text-formatted.css
+  - css/classy/components/media-embed-error.css
+  
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  footer_menu: 'Footer menu'
+  quick_links: 'Quick Links'
+  social_links: 'Social Links'
+  content: Content
+  page_header: 'Page Header'
+  page_face: 'Page Face'
+  main_slider: 'Main Slider'
+  product_accordion: 'Product Accordion'
+  category_list: 'Product Category List'
+  block_bottom: 'Block Bottom'
+  page_menu: 'Page Menu'
+
+# Information added by Drupal.org packaging script on 2022-03-21
+version: '1.0.0'
+project: 'drupal'
+datestamp: 1647899432

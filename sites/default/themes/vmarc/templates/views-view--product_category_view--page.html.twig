@@ -1,0 +1,22 @@
+{%
+  set classes = [
+    'view',
+    'view-' ~ id|clean_class,
+    'view-id-' ~ id,
+    'view-display-id-' ~ display_id,
+    dom_id ? 'js-view-dom-id-' ~ dom_id,
+	'custom-class'
+  ]
+%}
+{% if header %}
+    <header>
+      {{ header }}
+    </header>
+  {% endif %}
+<div class="products-body">
+  <div class="container">
+  <div class="product-list-container">
+	{{ rows }}
+  </div>
+  </div>
+</div>
